@@ -1,0 +1,34 @@
+[
+  {
+    "question": "What services do you offer?",
+    "answer": "I offer front-end and back-end development, database management, and website optimization to deliver complete, high-performing web solutions."
+  },
+  {
+    "question": "What technologies do you specialize in?",
+    "answer": "My expertise includes a range of front-end and back-end frameworks, responsive design tools, and database management systems to create well-rounded applications."
+  },
+  {
+    "question": "Can you handle both design and development?",
+    "answer": "Yes, I focus on front-end development with a keen eye for design, working closely with UI/UX principles to ensure both functional and visually appealing outcomes."
+  },
+  {
+    "question": "Do you offer SEO optimization?",
+    "answer": "Yes, I incorporate SEO best practices to improve site visibility, including optimized metadata, keyword strategies, and performance enhancements."
+  },
+  {
+    "question": "What is your typical project timeline?",
+    "answer": "Timelines vary based on project complexity, but I strive for efficient delivery without compromising quality, and we can discuss an estimated timeline during our initial consultation."
+  },
+  {
+    "question": "Do you provide ongoing support after project completion?",
+    "answer": "Yes, I offer maintenance and support packages to ensure your project continues to perform optimally and stays up-to-date with the latest technology."
+  },
+  {
+    "question": "How do you ensure website responsiveness?",
+    "answer": "I use responsive design techniques to make sure your website looks great on all devices, adapting to various screen sizes for a seamless user experience."
+  },
+  {
+    "question": "Can you integrate third-party APIs or services?",
+    "answer": "Absolutely! I have experience integrating various APIs to extend your website’s functionality and provide a richer user experience."
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Front-End Development",
+    "description": "Crafting visually engaging and interactive user interfaces. With a focus on responsive design and user experience, transform ideas into seamless, high-performance digital experiences that work beautifully across all devices and browsers."
+  },
+  {
+    "title": "Back-End Development",
+    "description": "Create the robust foundations that power seamless user experiences. From database management to server-side logic, ensure that applications run efficiently, securely, and are ready to scale as needed."
+  },
+  {
+    "title": "Database Management",
+    "description": "Manage databases to ensure data is organized, accessible, and secure. From structuring complex data models to optimizing queries, maintain high performance and reliability, supporting both small and large-scale applications."
+  }
+]

@@ -1,4 +1,4 @@
-import { Accordion } from "~/app/components/Accordion";
+import { Accordion } from "../../_components/Accordion";
 import data from "./data.json";
 import { FaChevronRight } from "react-icons/fa6";
 

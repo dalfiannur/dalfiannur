@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const NavigationBar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow">
@@ -7,7 +9,9 @@ export const NavigationBar = () => {
         </h1>
         <ul className="flex gap-4 font-baloo font-medium text-xl">
           <li>Home</li>
-          <li>Blog</li>
+          <li>
+            <Link href="/blog">Blog</Link>
+          </li>
           <li>Services</li>
           <li>Work Showcase</li>
         </ul>

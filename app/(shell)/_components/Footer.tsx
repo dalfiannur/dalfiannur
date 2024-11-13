@@ -8,7 +8,7 @@ import {
 
 export const Footer = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-10 border-t">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <h2 className="flex flex-col font-baloo text-4xl font-bold">

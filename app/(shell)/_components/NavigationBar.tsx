@@ -8,16 +8,26 @@ export const NavigationBar = () => {
           D`Coder
         </h1>
         <ul className="flex gap-4 font-baloo font-medium text-xl">
-          <li>Home</li>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
           <li>
             <Link href="/blog">Blog</Link>
           </li>
-          <li>Services</li>
-          <li>Work Showcase</li>
+          <li>
+            <Link href="/services">Services</Link>
+          </li>
+          <li>
+            <Link href="/work-showcase">Work Showcase</Link>
+          </li>
         </ul>
         <ul className="flex gap-4 font-baloo font-medium text-xl">
-          <li>About Me</li>
-          <li>Contact Me</li>
+          <li>
+            <Link href="/about">About Me</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact Me</Link>
+          </li>
         </ul>
       </div>
     </nav>

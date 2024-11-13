@@ -5,6 +5,7 @@ import {
   FaList,
 } from "react-icons/fa6";
 import { SearchArea } from "./_sections/SearchArea";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -28,12 +29,16 @@ export default function Page() {
                   Lorem Ipsum
                 </div>
                 <div className="flex-1">
-                  <div className="bg-gray-100 aspect-[3/2] rounded-tr-lg rounded-b-lg" />
+                  <Link href="/blog/slug-1">
+                    <div className="bg-gray-100 aspect-[3/2] rounded-tr-lg rounded-b-lg" />
+                  </Link>
                   <div className="mt-4">
                     <div className="flex justify-between">
-                      <h2 className="font-baloo font-medium text-xl">
-                        What is Lorem Ipsum?
-                      </h2>
+                      <Link href="/blog/slug-1">
+                        <h2 className="font-baloo font-medium text-xl">
+                          What is Lorem Ipsum?
+                        </h2>
+                      </Link>
                       <div className="font-fredoka">8 Min Read</div>
                     </div>
                     <p className="mt-2 font-fredoka">

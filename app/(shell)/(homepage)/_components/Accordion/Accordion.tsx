@@ -18,12 +18,12 @@ export const Accordion = ({ label, children }: AccordionProps) => {
     <Disclosure as="div" className="border-b">
       {({ open }) => (
         <>
-          <DisclosureButton className="w-full flex justify-between items-center px-8 py-4 gap-8 rounded-2xl text-xl font-bold font-baloo">
+          <DisclosureButton
+            data-opened={open}
+            className="group w-full flex justify-between items-center px-8 py-4 gap-8 rounded-2xl text-xl font-bold font-baloo text-gray-950 hover:text-primary data-[opened=true]:text-primary"
+          >
             {label}
-            <div
-              data-opened={open}
-              className="data-[opened=true]:rotate-180 transition-all"
-            >
+            <div className="group-data-[opened=true]:rotate-180 transition-all">
               <FaChevronDown size={16} />
             </div>
           </DisclosureButton>

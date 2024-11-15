@@ -9,6 +9,18 @@ module.exports = {
         baloo: "var(--font-baloo)",
         fredoka: "var(--font-fredoka)",
       },
+      colors: {
+        primary: {
+          DEFAULT: "#1E3A8A", // Biru tua (dominant)
+          light: "#3B82F6", // Biru cerah (accent)
+          pale: "#BFDBFE", // Biru muda (hover/highlight)
+        },
+        neutral: {
+          DEFAULT: "#F3F4F6", // Abu-abu terang (background)
+          white: "#FFFFFF", // Putih
+          light: "#F3F4F6", // Kontras Lembut
+        },
+      },
     },
   },
   plugins: [

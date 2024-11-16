@@ -6,8 +6,24 @@ import {
 } from "react-icons/fa6";
 import { SearchArea } from "./_sections/SearchArea";
 import Link from "next/link";
+import { faker } from "@faker-js/faker";
+import Image from "next/image";
 
-export default function Page() {
+const getData = async () => {
+  return Array.from(new Array(9).keys()).map((_, index) => ({
+    id: index,
+    title: faker.book.title(),
+    thumbnail: faker.image.url(),
+    description: faker.lorem.paragraph(),
+    category: {
+      name: faker.book.genre(),
+    },
+  }));
+};
+
+export default async function Page() {
+  const data = await getData();
+
   return (
     <div className="py-20">
       <SearchArea />
@@ -23,30 +39,35 @@ export default function Page() {
             </div>
           </div>
           <div className="mt-8 grid grid-cols-3 gap-16">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
-              <div key={index} className="flex">
-                <div className="bg-gradient-to-t from-gray-200 to-transparent rounded-br-lg text-vertical-mixed rotate-180 h-fit px-2 py-4 font-baloo">
-                  Lorem Ipsum
+            {data.map((item, index) => (
+              <div key={item.id} className="flex">
+                <div className="bg-gradient-to-t from-primary-light/20 to-transparent rounded-br-lg text-vertical-mixed rotate-180 h-fit px-2 py-4 font-baloo">
+                  {item.category.name}
                 </div>
                 <div className="flex-1">
                   <Link href="/blog/slug-1">
-                    <div className="bg-gray-100 aspect-[3/2] rounded-tr-lg rounded-b-lg" />
+                    <div className="aspect-[3/2] rounded-tr-lg rounded-b-lg relative overflow-hidden">
+                      <Image
+                        src={item.thumbnail}
+                        fill
+                        alt={item.title}
+                        className="object-cover"
+                      />
+                    </div>
                   </Link>
                   <div className="mt-4">
                     <div className="flex justify-between">
                       <Link href="/blog/slug-1">
-                        <h2 className="font-baloo font-medium text-xl">
-                          What is Lorem Ipsum?
+                        <h2 className="font-baloo font-medium text-xl text-primary">
+                          {item.title}
                         </h2>
                       </Link>
-                      <div className="font-fredoka">8 Min Read</div>
+                      <div className="font-fredoka text-gray-500">
+                        8 Min Read
+                      </div>
                     </div>
-                    <p className="mt-2 font-fredoka">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
+                    <p className="mt-2 font-fredoka text-gray-600">
+                      {item.description}
                     </p>
                   </div>
                 </div>

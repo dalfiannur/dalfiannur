@@ -1,20 +1,38 @@
+"use client";
 import { MdQuestionAnswer } from "react-icons/md";
 import { Accordion } from "../../_components/Accordion";
 import data from "./data.json";
 import { FaChevronRight, FaQuestion } from "react-icons/fa6";
+import { motion } from "motion/react";
 
 export const Faq = () => {
   return (
     <div className="py-20">
       <div className="container mx-auto">
         <div>
-          <h3 className="font-bold font-baloo text-4xl text-center text-primary">
+          <motion.h3
+            className="font-bold font-baloo text-4xl text-center text-primary"
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { delay: 0.3 },
+            }}
+          >
             Frequently Asked Questions
-          </h3>
-          <p className="mt-4 font-fredoka text-xl text-center text-gray-600">
+          </motion.h3>
+          <motion.p
+            className="mt-4 font-fredoka text-xl text-center text-gray-600"
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { delay: 0.3 },
+            }}
+          >
             Our FAQ section covers common questions to help you understand my
             services, workflow, and technical expertise.
-          </p>
+          </motion.p>
         </div>
         <div className="mt-16 flex gap-32">
           <div className="flex-1 flex flex-col gap-4">
@@ -27,19 +45,52 @@ export const Faq = () => {
             ))}
           </div>
           <div className="flex-1 max-w-xl aspect-square h-fit bg-primary-light/5 rounded-2xl flex flex-col items-center justify-center">
-            <MdQuestionAnswer size={192} className="text-primary-light" />
+            <motion.div
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: { delay: 0.3 },
+              }}
+            >
+              <MdQuestionAnswer size={192} className="text-primary-light" />
+            </motion.div>
             <div className="mt-8">
-              <h4 className="text-center text-3xl font-baloo font-bold text-primary">
+              <motion.h4
+                className="text-center text-3xl font-baloo font-bold text-primary"
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                  transition: { delay: 0.3 },
+                }}
+              >
                 Ask your question
-              </h4>
-              <p className="mt-2 text-center text-xl font-fredoka text-gray-600">
+              </motion.h4>
+              <motion.p
+                className="mt-2 text-center text-xl font-fredoka text-gray-600"
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                  transition: { delay: 0.3 },
+                }}
+              >
                 Feel free to ask questions on any time!
-              </p>
+              </motion.p>
             </div>
-            <button className="mt-16 w-fit bg-primary-light hover:bg-primary text-white px-8 py-4 font-baloo rounded-full text-xl font-semibold flex items-center gap-4">
+            <motion.button
+              className="mt-16 w-fit bg-primary-light hover:bg-primary text-white px-8 py-4 font-baloo rounded-full text-xl font-semibold flex items-center gap-4"
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: { delay: 0.3 },
+              }}
+            >
               Ask Question
               <FaChevronRight />
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const NavigationBar = () => {
   return (
-    <nav className="fixed z-10 top-0 left-0 right-0 shadow bg-primary">
+    <nav className="fixed z-10 top-0 left-0 right-0 shadow bg-gradient-to-b from-primary to-primary-light/90">
       <div className="container mx-auto flex justify-between items-center h-24">
         <h1 className="font-baloo text-5xl font-black tracking-widest text-neutral-white">
           D`Coder

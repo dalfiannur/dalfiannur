@@ -8,14 +8,14 @@ import {
 
 export const Footer = () => {
   return (
-    <div className="pt-10 border-t bg-primary">
+    <div className="pt-10 border-t bg-gradient-to-t from-primary to-primary-light/90">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <h2 className="flex flex-col font-baloo text-4xl font-bold text-neutral-white">
             <span>Have an Idea?</span>
             <span>Tell me about it</span>
           </h2>
-          <button className="font-semibold font-baloo text-xl bg-primary-light hover:bg-primary-light/20 text-white px-8 py-4 rounded-full">
+          <button className="font-semibold font-baloo text-xl bg-primary-light hover:bg-primary/20 text-white px-8 py-4 rounded-full">
             Contact Me
           </button>
         </div>

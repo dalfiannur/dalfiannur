@@ -1,26 +1,32 @@
 [
   {
     "title": "Programming Languanges",
+    "image": "/images/programming-languange.svg",
     "description": "I’m proficient in core web technologies like HTML and CSS, creating the structural and visual foundation of responsive, accessible websites. With JavaScript and TypeScript, I build dynamic, interactive experiences, ensuring robust functionality and seamless user interactions. Additionally, my knowledge of PHP allows me to work on back-end processes, enabling full-stack integration and a deeper understanding of server-side logic."
   },
   {
     "title": "Advanced Framworks",
+    "image": "/images/advanced-framework.svg",
     "description": "I specialize in advanced frameworks like Next.js and Nuxt.js to build fast, scalable, and interactive web applications. With TailwindCSS, I design clean, customizable UI components that align with modern design principles. My experience with Laravel allows me to create powerful back-end solutions, while NestJS helps me build robust, maintainable server-side applications with TypeScript, offering a seamless full-stack development experience."
   },
   {
     "title": "Database Management",
+    "image": "/images/database-management.svg",
     "description": "I have strong experience in database management, working with MySQL and PostgreSQL for relational data storage, ensuring efficient querying and data integrity. With MongoDB, I handle NoSQL databases, managing flexible, scalable data structures for dynamic applications, enabling optimal performance across various use cases."
   },
   {
     "title": "Version Control",
+    "image": "/images/version-control.svg",
     "description": "I use Git for version control to efficiently manage code changes, collaborate with teams, and maintain a clean development workflow. With Git, I ensure code stability through branching, merging, and tracking project history, making collaboration smoother and more organized."
   },
   {
     "title": "Responsive Design",
+    "image": "/images/responsive-design.svg",
     "description": "I specialize in responsive design, ensuring websites adapt seamlessly across all devices and screen sizes. By using flexible layouts, media queries, and modern CSS techniques, I create user-friendly experiences that look great on desktops, tablets, and mobile devices."
   },
   {
     "title": "SEO Optimization",
+    "image": "/images/seo-optimization.svg",
     "description": "I focus on SEO optimization to improve website visibility and search engine ranking. By implementing best practices like keyword research, optimized metadata, fast load times, and mobile-friendly design, I help websites reach their full potential and attract more organic traffic."
   }
 ]

@@ -1,19 +1,10 @@
+"use client";
 import { faker } from "@faker-js/faker";
 import Image from "next/image";
 import { FaCalendar, FaPencil, FaTags, FaUser } from "react-icons/fa6";
 import { MdCategory } from "react-icons/md";
 
-const getData = async () => {
-  return {
-    id: 1,
-    introduction: faker.lorem.paragraph(),
-    thumbnail: faker.image.url(),
-  };
-};
-
-export default async function Page() {
-  const data = await getData();
-
+export function Content() {
   return (
     <div>
       <div className="relative h-[calc(100vh-396px)]">
@@ -24,7 +15,7 @@ export default async function Page() {
           className="object-cover"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30">
-          <h1 className="font-baloo text-5xl font-bold text-white">
+          <h1 className="font-baloo text-5xl font-bold text-accent">
             {faker.book.title()}
           </h1>
         </div>
@@ -34,10 +25,10 @@ export default async function Page() {
           <div className="grid grid-cols-3 gap-16">
             <div className="col-span-2 pr-20 border-r py-10">
               <div className="pb-10 border-b">
-                <h2 className="font-baloo font-bold text-2xl text-primary">
+                <h2 className="font-baloo font-bold text-2xl text-accent">
                   Introduction
                 </h2>
-                <p className="font-fredoka text-gray-600">
+                <p className="font-fredoka text-subtle">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -52,10 +43,10 @@ export default async function Page() {
               </div>
               <div className="mt-10 flex flex-col gap-10">
                 <div>
-                  <h3 className="font-baloo font-bold text-3xl text-primary">
+                  <h3 className="font-baloo font-bold text-3xl text-accent">
                     Where does it come from?
                   </h3>
-                  <p className="mt-4 font-fredoka text-gray-900">
+                  <p className="mt-4 font-fredoka text-subtle">
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
                     from 45 BC, making it over 2000 years old. Richard
@@ -78,10 +69,10 @@ export default async function Page() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-baloo font-bold text-3xl text-primary">
+                  <h3 className="font-baloo font-bold text-3xl text-accent">
                     Why do we use it?
                   </h3>
-                  <p className="mt-4 font-fredoka text-gray-900">
+                  <p className="mt-4 font-fredoka text-subtle">
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout. The point of using Lorem Ipsum is that it has a
@@ -96,10 +87,10 @@ export default async function Page() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-baloo font-bold text-3xl text-primary">
+                  <h3 className="font-baloo font-bold text-3xl text-accent">
                     Where can I get some?
                   </h3>
-                  <p className="mt-4 font-fredoka text-gray-900">
+                  <p className="mt-4 font-fredoka text-subtle">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour, or randomised words which don't
@@ -124,10 +115,10 @@ export default async function Page() {
                   <div className="block md:hidden">
                     <FaUser />
                   </div>
-                  <div className="font-fredoka text-gray-400 font-semibold text-xs tracking-widest">
+                  <div className="font-fredoka text-highlight font-semibold text-xs tracking-widest">
                     Author
                   </div>
-                  <div className="font-fredoka font-bold text-primary">
+                  <div className="font-fredoka font-bold text-white">
                     Dikry Alfiannur
                   </div>
                 </div>
@@ -135,10 +126,10 @@ export default async function Page() {
                   <div className="block md:hidden">
                     <FaCalendar />
                   </div>
-                  <div className="font-fredoka text-gray-400 font-semibold text-xs tracking-widest">
+                  <div className="font-fredoka text-highlight font-semibold text-xs tracking-widest">
                     Publication Date
                   </div>
-                  <div className="font-fredoka font-bold text-primary">
+                  <div className="font-fredoka font-bold text-white">
                     20, Oct 2024
                   </div>
                 </div>
@@ -147,10 +138,10 @@ export default async function Page() {
                   <div className="block md:hidden">
                     <MdCategory />
                   </div>
-                  <div className="font-fredoka text-gray-400 font-semibold text-xs tracking-widest">
+                  <div className="font-fredoka text-highlight font-semibold text-xs tracking-widest">
                     Category
                   </div>
-                  <div className="font-fredoka font-bold text-primary">
+                  <div className="font-fredoka font-bold text-white">
                     Front-End Development
                   </div>
                 </div>
@@ -158,10 +149,10 @@ export default async function Page() {
                   <div className="block md:hidden">
                     <FaTags />
                   </div>
-                  <div className="font-fredoka text-gray-400 font-semibold text-xs tracking-widest">
+                  <div className="font-fredoka text-highlight font-semibold text-xs tracking-widest">
                     Tags
                   </div>
-                  <ul className="flex flex-wrap items-center gap-4 font-fredoka font-bold text-primary">
+                  <ul className="flex flex-wrap items-center gap-4 font-fredoka font-bold text-white">
                     <li>#Javascript</li>
                     <li>#React</li>
                     <li>#Tailwind</li>
@@ -170,10 +161,10 @@ export default async function Page() {
               </div>
 
               <div className="mt-16">
-                <h3 className="font-baloo font-bold text-xl text-center text-primary">
+                <h3 className="font-baloo font-bold text-xl text-center text-accent">
                   Table of Contents
                 </h3>
-                <ul className="mt-4 bg-primary-light/5 rounded-2xl p-8 list-disc list-inside text-gray-600 shadow">
+                <ul className="mt-4 bg-primary-lighten rounded-2xl p-8 list-disc list-inside text-subtle shadow">
                   <li>Introduction</li>
                   <li>Where does it come from?</li>
                   <li>Where does it come from?</li>

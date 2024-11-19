@@ -4,6 +4,7 @@ import { useMemo, useRef, useState } from "react";
 import data from "./data.json";
 import Image from "next/image";
 import { AnimatePresence, motion, useInView } from "motion/react";
+import { SectionDivider } from "~/app/components/SectionDivider";
 
 const titles = data.map((d) => d.title);
 
@@ -14,11 +15,12 @@ export const Expertise = () => {
 
   return (
     <AnimatePresence>
-      <div className="py-20 bg-primary-light/5">
-        <div className="container mx-auto">
+      <div className="py-20 relative overflow-hidden">
+        <SectionDivider />
+        <div className="relative z-1 container mx-auto">
           <div ref={ref} className="flex flex-col items-center">
             <motion.h2
-              className="text-4xl text-center font-bold font-baloo text-primary"
+              className="text-4xl text-center font-bold font-baloo text-accent"
               initial={{ y: 30, opacity: 0 }}
               whileInView={{
                 y: 0,
@@ -29,7 +31,7 @@ export const Expertise = () => {
               My Expertise
             </motion.h2>
             <motion.p
-              className="mt-4 text-xl text-center font-fredoka max-w-6xl text-gray-600"
+              className="mt-4 text-xl text-center font-fredoka max-w-6xl text-subtle"
               initial={{ y: 30, opacity: 0 }}
               whileInView={{
                 y: 0,
@@ -47,7 +49,7 @@ export const Expertise = () => {
               {titles.map((title, index) => (
                 <motion.li
                   key={index}
-                  className="border-b border-gray-200 text-gray-950 hover:text-primary"
+                  className="border-b border-mute text-subtle hover:text-highlight"
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{
                     y: 0,
@@ -59,7 +61,7 @@ export const Expertise = () => {
                     className="flex gap-8 pb-4 items-center w-full"
                     onClick={() => setSelected(index)}
                   >
-                    <div className="bg-primary-pale/30 rounded-xl w-16 h-16" />
+                    <div className="bg-accent rounded-xl w-16 h-16" />
                     <h3 className="font-bold text-xl">{title}</h3>
                   </button>
                 </motion.li>
@@ -89,10 +91,10 @@ export const Expertise = () => {
                     />
                   </div>
                   <div className="mt-16">
-                    <h3 className="font-baloo text-xl font-bold text-primary">
+                    <h3 className="font-baloo text-xl font-bold text-accent">
                       {selectedData.title}
                     </h3>
-                    <p className="mt-4 font-fredoka text-lg text-gray-600">
+                    <p className="mt-4 font-fredoka text-lg text-subtle">
                       {selectedData.description}
                     </p>
                   </div>

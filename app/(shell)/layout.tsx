@@ -4,7 +4,7 @@ import { Footer } from "./_components/Footer";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <div className="pt-24">
+    <div className="pt-24 bg-primary">
       <NavigationBar />
       {children}
       <Footer />

@@ -36,22 +36,21 @@ export const Hero = () => {
             </motion.div>
             <div className="mt-8">
               <motion.div
-                className="text-xs bg-primary-pale/60 text-primary px-4 py-2 w-fit rounded-full"
+                className="text-xs bg-accent/60 text-white px-4 py-2 w-fit rounded-full"
                 initial={{ x: -10, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1, transition: { delay: 0.4 } }}
               >
                 Tech World
               </motion.div>
               <motion.h1
-                className="mt-8 font-bold text-5xl font-baloo text-primary"
+                className="mt-8 font-bold text-5xl font-baloot"
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1, transition: { delay: 0.6 } }}
               >
-                Welcome to My Digital Playground: Exploring Creativity, Code,
-                and Innovation
+                <span className="text-white">Welcome to My Digital Playground:</span> <span className="text-highlight">Exploring Creativity, Code and Innovation</span>
               </motion.h1>
               <motion.p
-                className="mt-8 font-fredoka text-xl text-gray-500"
+                className="mt-8 font-fredoka text-xl text-subtle"
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1, transition: { delay: 0.8 } }}
               >
@@ -62,7 +61,7 @@ export const Hero = () => {
                 creativity, and everything in between!
               </motion.p>
               <motion.button
-                className="mt-8 bg-primary-light hover:bg-primary px-8 py-4 rounded-full font-baloo font-bold text-xl text-white"
+                className="mt-8 bg-highlight hover:bg-highlight/90 px-8 py-4 rounded-full font-baloo font-bold text-xl text-white"
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1, transition: { delay: 1 } }}
               >

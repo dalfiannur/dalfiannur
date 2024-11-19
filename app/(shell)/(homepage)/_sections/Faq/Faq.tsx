@@ -4,14 +4,16 @@ import { Accordion } from "../../_components/Accordion";
 import data from "./data.json";
 import { FaChevronRight, FaQuestion } from "react-icons/fa6";
 import { motion } from "motion/react";
+import { SectionDivider } from "~/app/components/SectionDivider";
 
 export const Faq = () => {
   return (
-    <div className="py-20">
-      <div className="container mx-auto">
+    <div className="py-20 relative overflow-hidden">
+      <SectionDivider />
+      <div className="relative z-1 container mx-auto">
         <div>
           <motion.h3
-            className="font-bold font-baloo text-4xl text-center text-primary"
+            className="font-bold font-baloo text-4xl text-center text-accent"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{
               y: 0,
@@ -22,7 +24,7 @@ export const Faq = () => {
             Frequently Asked Questions
           </motion.h3>
           <motion.p
-            className="mt-4 font-fredoka text-xl text-center text-gray-600"
+            className="mt-4 font-fredoka text-xl text-center text-subtle"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{
               y: 0,
@@ -38,7 +40,7 @@ export const Faq = () => {
           <div className="flex-1 flex flex-col gap-4">
             {data.map((item, index) => (
               <Accordion key={index} label={item.question}>
-                <p className="font-fredoka text-lg text-gray-600">
+                <p className="font-fredoka text-lg text-subtle">
                   {item.answer}
                 </p>
               </Accordion>
@@ -53,11 +55,11 @@ export const Faq = () => {
                 transition: { delay: 0.3 },
               }}
             >
-              <MdQuestionAnswer size={192} className="text-primary-light" />
+              <MdQuestionAnswer size={192} className="text-accent" />
             </motion.div>
             <div className="mt-8">
               <motion.h4
-                className="text-center text-3xl font-baloo font-bold text-primary"
+                className="text-center text-3xl font-baloo font-bold text-accent"
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{
                   y: 0,
@@ -68,7 +70,7 @@ export const Faq = () => {
                 Ask your question
               </motion.h4>
               <motion.p
-                className="mt-2 text-center text-xl font-fredoka text-gray-600"
+                className="mt-2 text-center text-xl font-fredoka text-subtle"
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{
                   y: 0,
@@ -80,7 +82,7 @@ export const Faq = () => {
               </motion.p>
             </div>
             <motion.button
-              className="mt-16 w-fit bg-primary-light hover:bg-primary text-white px-8 py-4 font-baloo rounded-full text-xl font-semibold flex items-center gap-4"
+              className="mt-16 w-fit bg-highlight hover:bg-highlight/90 text-white px-8 py-4 font-baloo rounded-full text-xl font-semibold flex items-center gap-4"
               initial={{ y: 30, opacity: 0 }}
               whileInView={{
                 y: 0,

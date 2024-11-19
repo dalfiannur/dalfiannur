@@ -11,15 +11,14 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: "#1E3A8A", // Biru tua (dominant)
-          light: "#3B82F6", // Biru cerah (accent)
-          pale: "#BFDBFE", // Biru muda (hover/highlight)
+          DEFAULT: "#121212",
+          lighten: "#1A1A1A",
         },
-        neutral: {
-          DEFAULT: "#F3F4F6", // Abu-abu terang (background)
-          white: "#FFFFFF", // Putih
-          light: "#F3F4F6", // Kontras Lembut
-        },
+        accent: "#3A86FF",
+        subtle: "#D1D5DB",
+        main: "#F5F5F5",
+        mute: "#424242",
+        highlight: "#F9A825",
       },
     },
   },

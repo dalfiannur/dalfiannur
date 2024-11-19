@@ -2,14 +2,16 @@
 import Image from "next/image";
 import data from "./data.json";
 import { motion } from "motion/react";
+import { SectionDivider } from "~/app/components/SectionDivider";
 
 export const ToolsTech = () => {
   return (
-    <div className="py-20 bg-primary-light/5">
-      <div className="container mx-auto">
+    <div className="py-20 relative overflow-hidden">
+      <SectionDivider />
+      <div className="relative z-1 container mx-auto">
         <div>
           <motion.h3
-            className="font-baloo font-bold text-4xl text-center text-primary"
+            className="font-baloo font-bold text-4xl text-center text-accent"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{
               y: 0,
@@ -20,7 +22,7 @@ export const ToolsTech = () => {
             Tools &amp; Technologies I Use
           </motion.h3>
           <motion.p
-            className="mt-4 font-fredoka text-xl text-center text-gray-600"
+            className="mt-4 font-fredoka text-xl text-center text-subtle"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{
               y: 0,
@@ -34,7 +36,7 @@ export const ToolsTech = () => {
             solution is built with modern practices and a user-first approach.
           </motion.p>
         </div>
-        <div className="mt-16 grid grid-cols-3 bg-primary-pale/10 rounded-3xl overflow-hidden">
+        <div className="mt-16 grid grid-cols-3 bg-white/5 rounded-3xl overflow-hidden">
           {data.map((item, index) => (
             <motion.div
               key={index}
@@ -50,7 +52,7 @@ export const ToolsTech = () => {
                 {item.items.map((icon, iIcon) => (
                   <div
                     key={iIcon}
-                    className="w-20 h-20 rounded-full bg-primary/5 flex items-center justify-center"
+                    className="w-20 h-20 rounded-full bg-highlight/5 flex items-center justify-center"
                   >
                     <Image
                       src={icon.image}
@@ -62,10 +64,10 @@ export const ToolsTech = () => {
                 ))}
               </div>
               <div className="mt-8">
-                <h4 className="font-bold text-2xl font-baloo text-center text-primary">
+                <h4 className="font-bold text-2xl font-baloo text-center text-accent">
                   {item.title}
                 </h4>
-                <p className="mt-4 font-fredoka text-center text-gray-600">
+                <p className="mt-4 font-fredoka text-center text-subtle">
                   {item.description}
                 </p>
               </div>

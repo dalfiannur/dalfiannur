@@ -1,14 +1,16 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
+import { SectionDivider } from "~/app/components/SectionDivider";
 
 export const WorkShowcase = () => {
   return (
-    <div className="py-20">
-      <div className="container mx-auto flex gap-32 items-center">
+    <div className="py-20 relative overflow-hidden">
+      <SectionDivider />
+      <div className="relative z-1 container mx-auto flex gap-32 items-center">
         <div className="flex-1 max-w-xl">
           <motion.h3
-            className="font-baloo font-bold text-4xl text-primary"
+            className="font-baloo font-bold text-4xl text-accent"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{
               y: 0,
@@ -19,7 +21,7 @@ export const WorkShowcase = () => {
             Explore My Work Showcase
           </motion.h3>
           <motion.p
-            className="mt-8 font-fredoka text-xl text-gray-600"
+            className="mt-8 font-fredoka text-xl text-subtle"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{
               y: 0,
@@ -84,7 +86,7 @@ export const WorkShowcase = () => {
           </motion.div>
           <div className="w-full aspect-square flex flex-col justify-center gap-8">
             <motion.p
-              className="text-xl font-fredoka text-gray-600"
+              className="text-xl font-fredoka text-subtle"
               initial={{ y: 30, opacity: 0 }}
               whileInView={{
                 y: 0,
@@ -98,7 +100,7 @@ export const WorkShowcase = () => {
               turn ideas into impactful digital experiences!
             </motion.p>
             <motion.button
-              className="bg-primary-light hover:bg-primary text-white w-fit rounded-full font-baloo px-8 py-4 font-bold text-xl"
+              className="bg-highlight hover:bg-highlight/90 text-white w-fit rounded-full font-baloo px-6 py-3 font-bold text-xl"
               initial={{ y: 30, opacity: 0 }}
               whileInView={{
                 y: 0,

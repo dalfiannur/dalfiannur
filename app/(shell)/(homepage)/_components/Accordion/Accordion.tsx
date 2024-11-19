@@ -16,12 +16,12 @@ type AccordionProps = {
 
 export const Accordion = ({ label, children }: AccordionProps) => {
   return (
-    <Disclosure as="div" className="border-b">
+    <Disclosure as="div" className="border-b border-mute/30">
       {({ open }) => (
         <>
           <DisclosureButton data-opened={open} className="group w-full">
             <motion.div
-              className="group flex justify-between items-center px-8 py-4 gap-8 rounded-2xl text-xl font-bold font-baloo text-gray-950 hover:text-primary group-data-[opened=true]:text-primary"
+              className="group flex justify-between items-center px-8 py-4 gap-8 rounded-2xl text-xl font-bold font-baloo text-subtle hover:text-highlight group-data-[opened=true]:text-accent"
               initial={{ y: 30, opacity: 0 }}
               whileInView={{
                 y: 0,

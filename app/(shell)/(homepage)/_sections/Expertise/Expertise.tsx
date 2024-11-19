@@ -6,8 +6,6 @@ import Image from "next/image";
 import { AnimatePresence, motion, useInView } from "motion/react";
 import { SectionDivider } from "~/app/components/SectionDivider";
 
-const titles = data.map((d) => d.title);
-
 export const Expertise = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [selected, setSelected] = useState(0);
@@ -46,7 +44,7 @@ export const Expertise = () => {
           </div>
           <div className="mt-16 flex gap-16">
             <ul className="flex-1 flex flex-col gap-4 font-baloo">
-              {titles.map((title, index) => (
+              {data.map((item, index) => (
                 <motion.li
                   key={index}
                   className="border-b border-mute text-subtle hover:text-highlight"
@@ -58,11 +56,12 @@ export const Expertise = () => {
                   }}
                 >
                   <button
-                    className="flex gap-8 pb-4 items-center w-full"
+                    data-selected={selected === index}
+                    className="group flex gap-4 pb-8 pt-4 items-center w-full"
                     onClick={() => setSelected(index)}
                   >
-                    <div className="bg-accent rounded-xl w-16 h-16" />
-                    <h3 className="font-bold text-xl">{title}</h3>
+                    <Image src={item.image} width={32} height={32} alt={item.title} className="w-8 h-8" />
+                    <h3 className="group-data-[selected=true]:text-accent font-bold text-xl">{item.title}</h3>
                   </button>
                 </motion.li>
               ))}

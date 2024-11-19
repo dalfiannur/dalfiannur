@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
         hostname: "loremflickr.com",
         port: "",
       },
+      {
+        protocol: 'https',
+        hostname: "jsdelivr.net",
+      }
     ],
   },
 };

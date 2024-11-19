@@ -5,6 +5,7 @@ import data from "./data.json";
 import { FaChevronRight, FaQuestion } from "react-icons/fa6";
 import { motion } from "motion/react";
 import { SectionDivider } from "~/app/components/SectionDivider";
+import Image from "next/image";
 
 export const Faq = () => {
   return (
@@ -55,7 +56,7 @@ export const Faq = () => {
                 transition: { delay: 0.3 },
               }}
             >
-              <MdQuestionAnswer size={192} className="text-accent" />
+              <Image src="/images/faq.svg" width={500} height={500} alt="Faq Icon" />
             </motion.div>
             <div className="mt-8">
               <motion.h4

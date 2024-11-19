@@ -52,7 +52,7 @@ export const ToolsTech = () => {
                 {item.items.map((icon, iIcon) => (
                   <div
                     key={iIcon}
-                    className="w-20 h-20 rounded-full bg-highlight/5 flex items-center justify-center"
+                    className="w-20 h-20 rounded-full bg-white/15 hover:bg-white flex items-center justify-center"
                   >
                     <Image
                       src={icon.image}

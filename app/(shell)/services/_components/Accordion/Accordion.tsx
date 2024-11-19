@@ -18,7 +18,7 @@ export const Accordion = ({ label, children }: AccordionProps) => {
     <Disclosure as="div" className="bg-primary-lighten rounded-xl">
       {({ open }) => (
         <>
-          <DisclosureButton className="cursor-pointer w-full flex justify-between items-center px-8 py-4 gap-8 rounded-2xl text-xl font-bold font-baloo text-highlight">
+          <DisclosureButton className="cursor-pointer select-none w-full flex justify-between items-center px-8 py-4 gap-8 rounded-2xl text-xl font-bold font-baloo text-highlight">
             {label}
             <div
               data-opened={open}

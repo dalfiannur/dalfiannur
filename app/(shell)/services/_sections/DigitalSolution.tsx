@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import { services } from '../data.json';
+
 export const DigitalSolution = () => {
   return (
     <div className="container mx-auto">
@@ -16,34 +19,14 @@ export const DigitalSolution = () => {
           </p>
         </div>
         <div className="mt-16 grid grid-cols-5 gap-8">
-          <div className="aspect-[3/2] rounded-2xl flex flex-col items-center justify-center gap-4 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent">
-            <div className="w-20 h-20 rounded-full bg-highlight" />
-            <h3 className="font-baloo font-semibold text-xl text-accent">Web Design</h3>
-          </div>
-          <div className="aspect-[3/2] rounded-2xl flex flex-col items-center justify-center gap-4 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent">
-            <div className="w-20 h-20 rounded-full bg-highlight" />
-            <h3 className="font-baloo font-semibold text-xl text-accent">
-              Web Development
-            </h3>
-          </div>
-          <div className="aspect-[3/2] rounded-2xl flex flex-col items-center justify-center gap-4 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent">
-            <div className="w-20 h-20 rounded-full bg-highlight" />
-            <h3 className="font-baloo font-semibold text-xl text-accent">
-              Mobile Development
-            </h3>
-          </div>
-          <div className="aspect-[3/2] rounded-2xl flex flex-col items-center justify-center gap-4 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent">
-            <div className="w-20 h-20 rounded-full bg-highlight" />
-            <h3 className="font-baloo font-semibold text-xl text-accent">
-              Database Management
-            </h3>
-          </div>
-          <div className="aspect-[3/2] rounded-2xl flex flex-col items-center justify-center gap-4 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent">
-            <div className="w-20 h-20 rounded-full bg-highlight" />
-            <h3 className="font-baloo font-semibold text-xl text-accent">
-              SEO Optimization
-            </h3>
-          </div>
+          {services.map((item) => (
+            <a href={`#${item.id}`} className="aspect-[3/2] rounded-2xl flex flex-col items-center justify-center gap-4 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent">
+              <div className="w-20 h-20 rounded-full bg-accent/20 flex items-center justify-center">
+                <Image src={item.icon} alt='item.title' width={40} height={40} />
+              </div>
+              <h3 className="font-baloo font-semibold text-xl text-accent">{item.title}</h3>
+            </a>
+          ))}
         </div>
       </div>
     </div>

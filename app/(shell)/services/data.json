@@ -1,0 +1,146 @@
+{
+  "services": [
+    {
+      "id": "web-desgin",
+      "title": "Web Design",
+      "icon": "/images/web-design.svg",
+      "description": "Web design is more than aesthetics—it’s about creating an engaging, user-centric experience. Our team blends creativity with functionality to design websites that are visually stunning and intuitive to navigate. We ensure your brand’s online presence stands out while delivering a seamless journey for your audience.",
+      "features": [
+        {
+          "title": "Responsive and Modern",
+          "description": "Designs adapt perfectly to all devices and screen sizes."
+        },
+        {
+          "title": "Intuitive Navigation",
+          "description": "Structures user flows for easy and enjoyable browsing."
+        },
+        {
+          "title": "Brand-focused Visuals",
+          "description": "Creates designs that reflect your unique brand identity."
+        }
+      ]
+    },
+    {
+      "id": "web-development",
+      "title": "Web Development",
+      "icon": "/images/web-development.svg",
+      "description": "Bring your ideas to life with our comprehensive web development services. We build fast, secure, and scalable websites that align with your goals and adapt to future demands. From e-commerce platforms to interactive web applications, our solutions are designed to provide exceptional performance and reliability.",
+      "features": [
+        {
+          "title": "Custom, Scalable Solutions",
+          "description": "Builds tailored platforms that grow with your business."
+        },
+        {
+          "title": "Secure and Fast",
+          "description": "Ensures websites are optimized for performance and safety."
+        },
+        {
+          "title": "Third-party Integrations",
+          "description": "Connects your site with external tools and services for added functionality."
+        }
+      ]
+    },
+    {
+      "id": "mobile-development",
+      "title": "Mobile Development",
+      "icon": "/images/mobile-development.svg",
+      "description": "In today’s mobile-first world, having an innovative and responsive app is essential. We specialize in creating custom mobile applications for iOS and Android, ensuring seamless functionality and a superior user experience. Whether it's for business, entertainment, or productivity, our solutions help you stay connected with your audience on the go.",
+      "features": [
+        {
+          "title": "Cross-platform Apps",
+          "description": "Develops apps compatible with both iOS and Android for wider reach."
+        },
+        {
+          "title": "User-frendly Interfaces",
+          "description": "Creates intuitive designs for seamless user experiences."
+        },
+        {
+          "title": "Seamless API Integration",
+          "description": "Connects apps with services and tools for enhanced functionality."
+        }
+      ]
+    },
+    {
+      "id": "database-management",
+      "title": "Database Management",
+      "icon": "/images/database-management-service.svg",
+      "description": "Database management is the backbone of any successful digital platform. With reliable and secure solutions, we ensure your data is stored, organized, and accessed efficiently. From optimizing performance to maintaining data integrity, our expertise empowers your operations with scalable and robust database systems, tailored to your business needs.",
+      "features": [
+        {
+          "title": "Secure, Scalable Storage",
+          "description": "Ensures your data is protected and can grow with your needs."
+        },
+        {
+          "title": "Fast Data Access",
+          "description": "Optimized systems for quick and reliable information retrieval."
+        },
+        {
+          "title": "Backup and Recovery",
+          "description": "Safeguards your data with regular backups and disaster recovery plans."
+        }
+      ]
+    },
+    {
+      "id": "seo-optimization",
+      "title": "SEO Optimization",
+      "icon": "/images/seo-optimization-service.svg",
+      "description": "Maximize your digital visibility with cutting-edge SEO strategies. Our optimization techniques improve your website’s ranking on search engines, driving organic traffic and increasing your reach. By focusing on keyword targeting, content refinement, and performance optimization, we help your business attract and retain the right audience.",
+      "features": [
+        {
+          "title": "Keyword Research",
+          "description": "Identifies the most effective keywords to target your audience."
+        },
+        {
+          "title": "Content and Technical SEO",
+          "description": "Optimizes your site’s content and structure for better rankings."
+        },
+        {
+          "title": "Performance Tracking",
+          "description": "Monitors SEO progress with detailed reports and insights."
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "title": "Expertise in Full-Stack Development",
+      "description": "With years of experience in both frontend and backend technologies, I can bring your ideas to life with seamless, full-scale web applications."
+    },
+    {
+      "title": "Passionate About Problem-Solving",
+      "description": "I thrive on challenges and continuously strive to find innovative solutions to complex problems that improve user experience and functionality."
+    },
+    {
+      "title": "Commitment to Quality",
+      "description": "I take pride in delivering clean, efficient, and well-documented code, ensuring your projects are both scalable and easy to maintain."
+    },
+    {
+      "title": "Attention to Detail",
+      "description": "Every project is important to me, and I pay close attention to every detail to ensure the final product exceeds expectations."
+    },
+    {
+      "title": "Tailored Solutions for Your Needs",
+      "description": "I work closely with you to understand your unique requirements and offer customized solutions that align with your business goals."
+    },
+    {
+      "title": "User-Centered Approach",
+      "description": "I prioritize the end-user experience, ensuring that all my designs and developments are intuitive, accessible, and responsive on all devices."
+    },
+    {
+      "title": "Timely Delivery",
+      "description": "I understand the value of time and consistently meet deadlines without compromising the quality of my work."
+    },
+    {
+      "title": "Clear Communication",
+      "description": "I believe in transparent communication and keeping you informed at every step of the project, making sure your vision is always in focus."
+    },
+    {
+      "title": "Continuous Learning and Adaptation",
+      "description": "I stay updated with the latest industry trends and technologies to provide you with innovative solutions that keep your digital presence ahead of the curve."
+    },
+    {
+      "title": "Affordable and Transparent Pricing",
+      "description": "I offer fair and competitive pricing with no hidden costs, providing value without compromising on quality."
+    }
+  ]
+}

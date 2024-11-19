@@ -1,4 +1,5 @@
 import { SectionDivider } from "~/app/components/SectionDivider"
+import { skills } from '../data.json';
 
 export const ChooseMe = () => {
   return (
@@ -20,20 +21,14 @@ export const ChooseMe = () => {
           </div>
           <div className="mt-16 flex justify-center">
             <div className="grid grid-cols-2 gap-8 max-w-screen-xl">
-              {[1, 2, 3, 4, 5, 6].map((_, index) => (
+              {skills.map((skill, index) => (
                 <div key={index} className="rounded-2xl p-8 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent">
-                  <div className="flex items-center gap-8">
-                    <div className="w-20 h-20 bg-gray-200 rounded-full" />
-                    <div className="flex-1">
-                      <h3 className="font-baloo font-bold text-2xl text-accent">
-                        Web Design
-                      </h3>
-                      <p className="font-fredoka text-subtle">
-                        Blend creativity with strategy to build visually
-                        stunning, user-centered websites.
-                      </p>
-                    </div>
-                  </div>
+                  <h3 className="font-baloo font-bold text-2xl text-accent">
+                    {skill.title}
+                  </h3>
+                  <p className="mt-2 font-fredoka text-subtle">
+                    {skill.description}
+                  </p>
                 </div>
               ))}
             </div>

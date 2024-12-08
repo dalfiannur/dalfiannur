@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { services } from '../data.json';
+import Image from "next/image";
+import data from "../data.json";
 
 export const DigitalSolution = () => {
   return (
@@ -19,16 +19,27 @@ export const DigitalSolution = () => {
           </p>
         </div>
         <div className="mt-16 grid grid-cols-5 gap-8">
-          {services.map((item) => (
-            <a href={`#${item.id}`} className="aspect-[3/2] rounded-2xl flex flex-col items-center justify-center gap-4 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent">
+          {data.services.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              className="aspect-[3/2] rounded-2xl flex flex-col items-center justify-center gap-4 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent"
+            >
               <div className="w-20 h-20 rounded-full bg-accent/20 flex items-center justify-center">
-                <Image src={item.icon} alt='item.title' width={40} height={40} />
+                <Image
+                  src={item.icon}
+                  alt="item.title"
+                  width={40}
+                  height={40}
+                />
               </div>
-              <h3 className="font-baloo font-semibold text-xl text-accent">{item.title}</h3>
+              <h3 className="font-baloo font-semibold text-xl text-accent">
+                {item.title}
+              </h3>
             </a>
           ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

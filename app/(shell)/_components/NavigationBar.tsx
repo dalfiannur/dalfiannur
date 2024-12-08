@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const NavigationBar = () => {
   return (
-    <nav className="fixed z-10 top-0 left-0 right-0 shadow bg-gradient-to-b from-accent to-accent/90">
+    <nav className="fixed z-10 top-0 left-0 right-0 bg-primary-lighten shadow shadow-highlight">
       <div className="container mx-auto flex justify-between items-center h-24">
         <h1 className="font-baloo text-5xl font-black tracking-widest text-white">
           D`Coder
@@ -23,11 +23,11 @@ export const NavigationBar = () => {
               Services
             </Link>
           </li>
-          {/* <li>
-            <Link href="/work-showcase" className="hover:text-highlight">
+          <li>
+            <Link href="/showcase" className="hover:text-highlight">
               Work Showcase
             </Link>
-          </li> */}
+          </li>
         </ul>
         <ul className="flex gap-6 font-baloo font-semibold text-xl text-white">
           {/* <li>

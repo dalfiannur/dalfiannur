@@ -6,7 +6,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { ReactNode } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import { FaChevronDown } from "react-icons/fa6";
 
 type AccordionProps = {
   label: ReactNode;

@@ -1,5 +1,5 @@
-import { SectionDivider } from "~/app/components/SectionDivider"
-import { skills } from '../data.json';
+import { SectionDivider } from "~/app/components/SectionDivider";
+import data from "../data.json";
 
 export const ChooseMe = () => {
   return (
@@ -15,14 +15,15 @@ export const ChooseMe = () => {
               When you choose me for your web development needs, you gain access
               to a range of benefits that make your project a success.
             </p>
-            <p>
-              Here's why working with me is the right choice
-            </p>
+            <p>Here&apos;s why working with me is the right choice</p>
           </div>
           <div className="mt-16 flex justify-center">
             <div className="grid grid-cols-2 gap-8 max-w-screen-xl">
-              {skills.map((skill, index) => (
-                <div key={index} className="rounded-2xl p-8 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent">
+              {data.skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="rounded-2xl p-8 bg-gradient-to-t from-primary-lighten to-primary shadow shadow-accent"
+                >
                   <h3 className="font-baloo font-bold text-2xl text-accent">
                     {skill.title}
                   </h3>
@@ -36,5 +37,5 @@ export const ChooseMe = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

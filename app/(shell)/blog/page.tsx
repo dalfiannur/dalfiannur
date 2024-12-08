@@ -18,10 +18,10 @@ export default async function Page() {
       thumbnail: faker.image.url(),
       description: faker.lorem.paragraph(),
       category: {
-        name: faker.book.genre()
-      }
-    }
-  ]
+        name: faker.book.genre(),
+      },
+    },
+  ];
 
   return (
     <div className="py-20">
@@ -39,7 +39,7 @@ export default async function Page() {
             </div>
           </div>
           <div className="mt-8 grid grid-cols-3 gap-16">
-            {data.map((item, index) => (
+            {data.map((item) => (
               <div key={item.id} className="flex">
                 <div className="bg-gradient-to-t from-accent/20 text-subtle font-semibold to-transparent rounded-br-lg text-vertical-mixed rotate-180 h-fit px-2 py-4 font-baloo">
                   {item.category.name}

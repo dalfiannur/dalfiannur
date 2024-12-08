@@ -8,7 +8,7 @@ import {
 
 export const Footer = () => {
   return (
-    <div className="pt-10 border-t border-highlight bg-gradient-to-t from-accent to-accent/90">
+    <div className="pt-10 border-t border-highlight bg-gradient-to-t from-primary-lighten to-primary-lighten/90">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <h2 className="flex flex-col font-baloo text-4xl font-bold text-white">

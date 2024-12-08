@@ -27,8 +27,11 @@ export const Accordion = ({ label, children }: AccordionProps) => {
                 opacity: 1,
                 transition: { delay: 0.3 },
               }}
+              viewport={{
+                once: true,
+              }}
             >
-              <div className="group flex justify-between items-center px-8 py-4 gap-8 rounded-2xl text-xl font-bold font-baloo text-subtle hover:text-highlight group-data-[opened=true]:text-accent">
+              <div className="group flex justify-between items-center text-left px-8 py-4 gap-8 rounded-2xl text-sm md:text-xl font-bold font-baloo text-subtle hover:text-highlight group-data-[opened=true]:text-accent">
                 {label}
                 <div className="group-data-[opened=true]:rotate-180 transition-all">
                   <FaChevronDown size={16} />

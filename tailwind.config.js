@@ -45,6 +45,13 @@ module.exports = {
           textOrientation: "use-glyph-orientation",
           writingMode: "vertical-rl",
         },
+        ".hide-scroll": {
+          MsOverflowStyle: "none",
+          scrollbarWidth: "none",
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+        },
       });
     }),
   ],

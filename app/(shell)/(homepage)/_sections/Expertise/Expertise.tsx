@@ -51,7 +51,7 @@ export const Expertise = () => {
             </motion.div>
           </div>
           <div className="mt-4 md:mt-16 flex flex-col md:flex-row gap-16 px-4">
-            <ul className="flex-1 flex flex-row md:flex-col gap-4 font-baloo overflow-x-scroll">
+            <ul className="flex-1 flex flex-row md:flex-col gap-4 font-baloo overflow-x-scroll overflow-y-hidden hide-scroll">
               {data.map((item, index) => (
                 <motion.li
                   key={index}
@@ -68,7 +68,7 @@ export const Expertise = () => {
                     once: true,
                   }}
                 >
-                  <div className="border-b border-mute text-subtle hover:text-highlight w-max">
+                  <div className="border-b border-mute text-subtle hover:text-highlight w-max md:w-full">
                     <button
                       data-selected={selected === index}
                       className="group flex gap-2 md:gap-4 pb-4 md:pb-8 pt-4 items-center w-full"

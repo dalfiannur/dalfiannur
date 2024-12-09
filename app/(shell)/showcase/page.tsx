@@ -12,7 +12,7 @@ export default function Page() {
                 src="/images/showcase/ppid-jakarta-timur/hero-banner.webp"
                 alt="PPID Jakarta Timur"
                 fill
-                className="cover hover:scale-105 transition-all"
+                className="object-cover hover:scale-105 transition-all"
               />
             </div>
           </Link>
@@ -38,10 +38,10 @@ export default function Page() {
           <Link href="/showcase/jakarta-timur">
             <div className="relative aspect-video overflow-hidden rounded-xl">
               <Image
-                src="/images/showcase/ppid-jakarta-timur/hero-banner.webp"
+                src="/images/showcase/jakarta-timur/hero-banner.webp"
                 alt="Jakarta Timur Main Website"
                 fill
-                className="cover hover:scale-105 transition-all"
+                className="object-cover hover:scale-105 transition-all"
               />
             </div>
           </Link>

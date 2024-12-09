@@ -67,14 +67,14 @@ export default function Page() {
                 </h2>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 10, width: "100%" }}
                 whileInView={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
                 viewport={{
                   once: true,
                 }}
               >
                 <h3 className="font-baloo font-bold text-5xl text-left text-highlight uppercase tracking-widest">
-                  Run Smooth on Mobile and Desktop Device
+                  Run Smooth on Mobile and Desktop Devices
                 </h3>
               </motion.div>
               <motion.div
@@ -90,7 +90,7 @@ export default function Page() {
                   several challenges. One of the main difficulties was ensuring
                   that the layout and design elements adapted seamlessly to
                   different screen sizes, from small mobile screens to large
-                  desktop monitors. This involved careful planning of flexible
+                  desktop monitors. This involved carefully planning flexible
                   grid systems, media queries, and scalable images to ensure
                   that the user experience remained consistent and visually
                   appealing regardless of the device.
